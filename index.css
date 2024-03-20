@@ -1,0 +1,31 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    --main-background-colors: #C5C5B9 20%, white;
+    --colors: black;
+}
+
+body {
+    background-image: linear-gradient(to top, var(--main-background-colors));
+    color: var(--colors);
+    background-attachment: fixed;
+}
+
+.navbar {
+    display: block;
+    text-align: left;
+}
+
+.navbar a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 2%;
+    color: var(--colors)
+}
+
+.navbar a:hover {
+    text-shadow: 1px 1px 15px #31312fac;
+}
+
+main {
+    margin: 5%;
+}

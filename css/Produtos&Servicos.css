@@ -1,0 +1,78 @@
+h1 {
+    font-size: 300%;
+}
+
+
+.box div {
+    display: inline-block;
+    background-color: #31312F;
+    padding: 3%;
+    margin-top: 5%;
+    margin-inline: 1%;
+    border-radius: 8px;
+    box-shadow: 8px 8px 1px black;
+    color: white;
+}
+
+.box div:hover {
+    box-shadow: 9px 9px 2px black;
+    transform: scale(1.5);
+    transition: transform 1s ease;
+}
+
+.box div:hover > p {
+    display: block;
+}
+
+.box div p {
+    display: none;
+}
+
+.anim {
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	55% {
+		animation-timing-function: ease-in;
+		transform: translateY(-65px);
+	}
+
+	72% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	81% {
+		animation-timing-function: ease-in;
+		transform: translateY(-28px);
+	}
+
+	90% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	95% {
+		animation-timing-function: ease-in;
+		transform: translateY(-8px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+}

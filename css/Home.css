@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
+h1 {
+    text-align: center;
+    font-size: 350%;
+    font-family: "Onest", sans-serif;
+}
+
+.HomeLogo {
+    position: absolute;
+    top: 70%;
+    left: 38%;
+    transform: translate(-38%, -70%);
+    border-radius: 100%;
+    width: 20%;
+    height: 40%;
+    padding: 1%;
+    -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+  
+    /* Adicione a animação */
+    -webkit-animation: flip-2-hor-top-fwd 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    animation: flip-2-hor-top-fwd 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+  }
+  
+  @-webkit-keyframes flip-2-hor-top-fwd {
+    0% {
+      -webkit-transform: translateY(0) translateZ(0) rotateX(180deg);
+      transform: translateY(0) translateZ(0) rotateX(180deg);
+      -webkit-transform-origin: 50% 0%;
+      transform-origin: 50% 0%;
+    }
+    100% {
+      -webkit-transform: translateY(-100%) translateZ(160px) rotateX(0);
+      transform: translateY(-100%) translateZ(160px) rotateX(0);
+      -webkit-transform-origin: 50% 100%;
+      transform-origin: 50% 100%;
+    }
+  }
+  @keyframes flip-2-hor-top-fwd {
+    0% {
+      -webkit-transform: translateY(0) translateZ(0) rotateX(180deg);
+      transform: translateY(0) translateZ(0) rotateX(180deg);
+      -webkit-transform-origin: 50% 0%;
+      transform-origin: 50% 0%;
+    }
+    100% {
+      -webkit-transform: translateY(-100%) translateZ(160px) rotateX(0);
+      transform: translateY(-100%) translateZ(160px) rotateX(0);
+      -webkit-transform-origin: 50% 100%;
+      transform-origin: 50% 100%;
+    }
+  }
+  
+
+/* margin: auto;
+border: 1px solid var(--colors);
+border-radius: 10px;
+padding: 2%;
+width: 25%;
+box-shadow: 5px 5px 15px #0019369b; */
+
+.anim2 {
+    animation: myAnim 1s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+	0% {
+		transform: scale(0.5);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}

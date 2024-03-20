@@ -1,0 +1,49 @@
+h1 {
+    font-size: 350%;
+}
+
+.anim2 {
+    animation: myAnim 1s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+	0% {
+		transform: scale(0.5);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+.persons {
+	position: absolute;
+	background-color: #C5C5B9;
+	border-radius: 10px;
+	box-shadow: 1px 1px 5px;
+	width: 40%;
+	height: 15%;
+	margin-top: 3%;
+	display: flex;
+	flex-direction: row;
+}
+
+.persons img {
+	width: 15%;
+	height: 70%;
+	border-radius: 100%;
+	margin-top: 2%;
+	margin-left: 1%;
+}
+
+.persons div {
+	display: flex;
+	flex-direction: column;
+	margin-top: 2%;
+	margin-left: 3%;
+}
+
+.persons div p{
+	margin-top: -6%;
+	margin-left: 1%;
+}
