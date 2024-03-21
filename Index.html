@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 
 $pages = ["Home" => "Home", "Produtos e Serviços" => "Produtos e Serviços", "Projetos" => "Projetos Futuros | Em Andamento", "Sobre" => "Sobre"];
 
@@ -7,34 +7,35 @@ include("./pages/Produtos&Servicos.php");
 include("./pages/Projetos.php");
 include("./pages/Sobre.php");
 
-?>
+?> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
     <title>Front-End Developer</title>
 </head>
-<body>
+<body onload="loaded()">
     <header>
-        <nav class="navbar">
-            <?php
+        <nav class="navbar" id="nav">
+            <!-- <?php
             foreach($pages as $key => $p){
                 echo "<a href='?page=$key'>$key</a>";
             }
-            ?>
+            ?> -->
         </nav>
     </header>
-    <main>
-            <?php
+    <main id="main">
+            <!-- <?php
             $page = (isset($_GET["page"]) ? $_GET["page"] : "Home");
             if(!array_key_exists($page, $pages)){
                 $page = "Home";
             }
             
             echo $pages[$page];
-            ?>
+            ?> -->
     </main>
 </body>
 </html>
