@@ -5,29 +5,6 @@ const pages = {
     Sobre: "Sobre"
 };
 
-let url_atual = window.location.href;
-
-const urlPadrao = "file:///C:/Users/Gustavo/Desktop/Estudos%20Programa%C3%A7%C3%A3o/HTML-CSS/DEVELOPER%20FRONT-END/Index.html"
-
-function loaded(ev) {
-    Object.entries(pages).forEach(([key, value], index) => {
-        document.getElementById("nav").innerHTML += `<a href='?page=${key}'>${key}</a>`;
-    });
-    getPageContent()
-    //console.log(url_atual);
-}
-
-function getPageContent() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const page = urlParams.get("page") || "Home";
-
-    if (!pages.hasOwnProperty(page)) {
-        return pages["Home"];
-    }
-
-    document.getElementById("main").innerHTML = pages[page];
-}
-
 const setHome = () => {
     pages.Home = `
     <link rel="stylesheet" href="./css/Home.css">
@@ -161,3 +138,27 @@ const setSobre = () => {
     setProdutosEServicos()
     setProgetos()
     setSobre()
+
+
+// let url_atual = window.location.href;
+
+const urlPadrao = "file:///C:/Users/Gustavo/Desktop/Estudos%20Programa%C3%A7%C3%A3o/HTML-CSS/DEVELOPER%20FRONT-END/Index.html"
+
+function loaded(ev) {
+    Object.entries(pages).forEach(([key, value], index) => {
+        document.getElementById("nav").innerHTML += `<a href='?page=${key}'>${key}</a>`;
+    });
+    getPageContent()
+    //console.log(url_atual);
+}
+
+function getPageContent() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const page = urlParams.get("page") || "Home";
+
+    if (!pages.hasOwnProperty(page)) {
+        return pages["Home"];
+    }
+
+    document.getElementById("main").innerHTML = pages[page];
+}
