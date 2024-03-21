@@ -29,3 +29,32 @@ body {
 main {
     margin: 5%;
 }
+
+.btn{
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #000000;
+    background: linear-gradient(360deg, #00000000 100%, #00000000 100%);
+    padding: 10px 30px;
+    border: solid #ffffff 2px;
+    border: solid 2px #000000;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    border-radius: 0px 50px 50px;
+    transition : 1000ms;
+    transform: translateY(0);
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    left: 60%;
+    }
+    
+.btn:hover{
+    
+    transition : 1000ms;
+    padding: 10px 40px;
+    transform : translateY(-0px);
+    background: linear-gradient(360deg, rgb(37, 37, 37), rgb(46, 45, 45));
+    color: #ffffff;
+    border: solid #ffffff 2px;
+}

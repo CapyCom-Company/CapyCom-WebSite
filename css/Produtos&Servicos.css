@@ -15,17 +15,30 @@ h1 {
 }
 
 .box div:hover {
-    box-shadow: 9px 9px 2px black;
+	box-shadow: 9px 9px 2px black;
     transform: scale(1.5);
     transition: transform 1s ease;
 }
 
 .box div:hover > p {
-    display: block;
+	display: block;
 }
 
 .box div p {
     display: none;
+}
+
+.box div a {
+	display: none;
+}
+
+.box div:hover > a {
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	border: solid white 1px;
+	border-radius: 8px;
+	padding: 3%;
 }
 
 .anim {
@@ -75,4 +88,22 @@ h1 {
 		animation-timing-function: ease-out;
 		transform: translateY(0);
 	}
+}
+
+.anim2 {
+    animation: myAnim 1s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+	0% {
+		transform: scale(0.5);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+ul {
+	padding: 0%;
 }
