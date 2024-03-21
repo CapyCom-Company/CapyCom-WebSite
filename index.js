@@ -13,10 +13,6 @@ function loaded(ev) {
     Object.entries(pages).forEach(([key, value], index) => {
         document.getElementById("nav").innerHTML += `<a href='?page=${key}'>${key}</a>`;
     });
-    setHome()
-    setProdutosEServicos()
-    setProgetos()
-    setSobre()
     getPageContent()
     //console.log(url_atual);
 }
@@ -161,3 +157,7 @@ const setSobre = () => {
 
     `
 }
+    setHome()
+    setProdutosEServicos()
+    setProgetos()
+    setSobre()
